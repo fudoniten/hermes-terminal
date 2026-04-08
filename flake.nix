@@ -38,15 +38,15 @@
         # Container registry settings
         containerConfig = {
           name = "hermes-terminal";
-          repo = "ghcr.io/your-org"; # TODO: Change to your registry
+          repo = "registry.kube.sea.fudo.link";
           tag = "latest";
         };
 
         # SSH authorized keys for the Hermes agent
-        # Add your agent's public key(s) here
+        # Note: In Kubernetes, keys are managed via the hermes-terminal-ssh-keys secret.
+        # These keys are baked into the image as a fallback for non-K8s usage.
         authorizedKeys = [
-          # TODO: Add your SSH public keys
-          # "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI... hermes-agent"
+          "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMBsJi3nN8/9Zy2LKYOeSHzKaPTVL+mA9sgxoiB5Hf1i7OxVY81ZUy9VCo8eiZZ31+fX67xank4QxQslmD5wUOQ="
         ];
 
         # Additional packages to include in the terminal
