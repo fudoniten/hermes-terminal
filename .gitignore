@@ -1,9 +1,0 @@
-# Nix build artifacts
-result
-result-*
-
-# Editor artifacts
-*~
-*.swp
-.idea/
-.vscode/
