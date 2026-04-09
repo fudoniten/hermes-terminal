@@ -126,7 +126,6 @@
           enableNix = false;
           extraSshdConfig = ''
             AllowAgentForwarding yes
-            UsePAM no
           '';
 
           tags = [ "latest" ];
