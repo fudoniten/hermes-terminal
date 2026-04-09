@@ -109,6 +109,9 @@
           extraSshdConfig = ''
             # Allow agent forwarding for git operations
             AllowAgentForwarding yes
+            # Disable PAM account checks - hermes account has no password (locked),
+            # which causes PAM to reject logins even with valid SSH keys.
+            UsePAM no
           '';
         };
 
@@ -123,6 +126,7 @@
           enableNix = false;
           extraSshdConfig = ''
             AllowAgentForwarding yes
+            UsePAM no
           '';
 
           tags = [ "latest" ];
