@@ -53,25 +53,52 @@
         # These are the tools Hermes will have access to
         terminalPackages = with pkgs; [
           # Programming languages
+          clang
+          cmake
+          gcc
           python3
+          make
           nodejs
+          npm
 
           # Build tools
           gnumake
           cmake
+          nix
+
+          # System
+          btop
+          htop
+          flux
+          iproute2
+          kubectl
+          netstat
+          ss
+          tmux
 
           # Version control (git is included by default)
           gh # GitHub CLI
 
           # Text processing
+          fd
+          jless
           jq
           yq-go
           ripgrep
           fd
+          yq
 
           # Network tools
+          curl
           netcat
-          openssh # SSH client for outbound connections
+          net-tools
+          openssh
+          wget
+
+          # Secrets
+          age
+          sops
+          vault
 
           # Development utilities
           tree
