@@ -52,59 +52,100 @@
         # Additional packages to include in the terminal
         # These are the tools Hermes will have access to
         terminalPackages = with pkgs; [
-          # Programming languages
+          # Programming languages & runtimes
           clang
-          cmake
           gcc
-          python3
-          make
+          go
           nodejs
-          npm
+          python3
+          ruby
 
           # Build tools
-          gnumake
           cmake
-          nix
+          gnumake
+          pkg-config
 
-          # System
-          btop
-          htop
-          flux
-          iproute2
+          # Version control extras (git is included by default)
+          gh        # GitHub CLI
+          git-lfs
+
+          # Kubernetes / Cloud ops
+          fluxcd
+          helm      # kubernetes-helm
+          k9s
           kubectl
-          netstat
-          ss
-          tmux
+          kubectx
+          kustomize
 
-          # Version control (git is included by default)
-          gh # GitHub CLI
-
-          # Text processing
-          fd
-          jless
-          jq
-          yq-go
-          ripgrep
-          fd
-          yq
-
-          # Network tools
-          curl
-          netcat
-          net-tools
-          openssh
-          wget
-
-          # Secrets
+          # Secrets & config management
           age
           sops
           vault
 
-          # Development utilities
-          tree
+          # Network tools
+          bind      # dig, nslookup
+          curl
+          grpcurl
+          httpie    # human-friendly HTTP client
+          iproute2  # ip, ss
+          iputils   # ping, ping6, arping, tracepath
+          mtr       # network diagnostic (traceroute + ping)
+          net-tools # netstat, ifconfig, route
+          netcat-openbsd
+          nmap      # nmap + ncat
+          openssh
+          rsync
+          socat
+          tcpdump
+          traceroute
+          wget
+
+          # System monitoring & inspection
+          btop
+          htop
+          lsof
+          procps    # ps, top, kill, free, vmstat, watch
+          strace
+
+          # Terminal multiplexer & editors
           tmux
           vim
           nano
+
+          # Text processing & search
+          bat       # syntax-highlighting cat
+          fd
+          gawk
+          gnused
+          hexyl     # hex viewer
+          jless
+          jq
+          miller    # mlr - CSV/JSON/TSV processing
+          ripgrep
+          yq-go
+
+          # File & archive utilities
+          bzip2
+          diffutils
+          file
+          findutils
+          gzip
+          less
+          patch
+          pv        # pipe viewer
+          tree
+          unzip
+          xz
+          zip
+          zstd
+
+          # Shell utilities & linting
+          parallel  # GNU parallel
+          shellcheck
+          sqlite
+
+          # Container inspection
+          skopeo
         ];
 
         # Environment variables for the container
