@@ -66,12 +66,12 @@
           pkg-config
 
           # Version control extras (git is included by default)
-          gh        # GitHub CLI
+          gh # GitHub CLI
           git-lfs
 
           # Kubernetes / Cloud ops
           fluxcd
-          helm      # kubernetes-helm
+          helm # kubernetes-helm
           k9s
           kubectl
           kubectx
@@ -80,19 +80,18 @@
           # Secrets & config management
           age
           sops
-          vault
 
           # Network tools
-          bind      # dig, nslookup
+          bind # dig, nslookup
           curl
           grpcurl
-          httpie    # human-friendly HTTP client
-          iproute2  # ip, ss
-          iputils   # ping, ping6, arping, tracepath
-          mtr       # network diagnostic (traceroute + ping)
+          httpie # human-friendly HTTP client
+          iproute2 # ip, ss
+          iputils # ping, ping6, arping, tracepath
+          mtr # network diagnostic (traceroute + ping)
           net-tools # netstat, ifconfig, route
           netcat-openbsd
-          nmap      # nmap + ncat
+          nmap # nmap + ncat
           openssh
           rsync
           socat
@@ -104,7 +103,7 @@
           btop
           htop
           lsof
-          procps    # ps, top, kill, free, vmstat, watch
+          procps # ps, top, kill, free, vmstat, watch
           strace
 
           # Terminal multiplexer & editors
@@ -113,14 +112,14 @@
           nano
 
           # Text processing & search
-          bat       # syntax-highlighting cat
+          bat # syntax-highlighting cat
           fd
           gawk
           gnused
-          hexyl     # hex viewer
+          hexyl # hex viewer
           jless
           jq
-          miller    # mlr - CSV/JSON/TSV processing
+          miller # mlr - CSV/JSON/TSV processing
           ripgrep
           yq-go
 
@@ -132,7 +131,7 @@
           gzip
           less
           patch
-          pv        # pipe viewer
+          pv # pipe viewer
           tree
           unzip
           xz
@@ -140,7 +139,7 @@
           zstd
 
           # Shell utilities & linting
-          parallel  # GNU parallel
+          parallel # GNU parallel
           shellcheck
           sqlite
 
