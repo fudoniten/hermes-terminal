@@ -46,7 +46,7 @@
         # Note: In Kubernetes, keys are managed via the hermes-terminal-ssh-keys secret.
         # These keys are baked into the image as a fallback for non-K8s usage.
         authorizedKeys = [
-          "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMBsJi3nN8/9Zy2LKYOeSHzKaPTVL+mA9sgxoiB5Hf1i7OxVY81ZUy9VCo8eiZZ31+fX67xank4QxQslmD5wUOQ="
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKrl31isnzPNup80KzUWX46rvXrhvUS22Q0dIIdcUEmj niten@jazz"
         ];
 
         # Additional packages to include in the terminal
