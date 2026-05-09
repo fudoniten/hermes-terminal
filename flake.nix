@@ -60,6 +60,13 @@
           python3
           ruby
 
+          # Clojure
+          babashka
+          clj-kondo
+          clojure
+          leiningen
+          temurin-bin # JDK required by Clojure tooling
+
           # Build tools
           cmake
           gnumake
@@ -170,7 +177,7 @@
           enableGit = true;
 
           # Enable nix if you want the agent to be able to install packages
-          enableNix = false;
+          enableNix = true;
 
           # Additional sshd configuration if needed
           extraSshdConfig = ''
@@ -190,7 +197,7 @@
           packages = terminalPackages;
           env = containerEnv;
           enableGit = true;
-          enableNix = false;
+          enableNix = true;
           extraSshdConfig = ''
             AllowAgentForwarding yes
           '';
@@ -207,7 +214,7 @@
           packages = terminalPackages;
           env = containerEnv;
           enableGit = true;
-          enableNix = false;
+          enableNix = true;
 
           tags = [ "v1.0.0" "latest" ];
           verbose = true;
